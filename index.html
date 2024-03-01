@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette|Gruppo|Montserrat|Protest Riot|Poppins|Concert One">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!--HEADER // NAVBAR-->
+    <header>
+        <nav>
+            <img src="logo.png" alt="logo" class="logo"> 
+             <ul>
+                <li><a href="#hero" class="active">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">MY WORKS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul> 
+        </nav>
+    </header>
+    
+    <!--HERO SECTION-->
+    <section id="hero">
+        <div class="left-side">
+            <h3>It's yours truly,</h3>
+            <h1>Elaine Joyce Manalo</h1>
+            <h2>I am a <span>Student with passion</span></h2>
+            <a href="resumenielaine.pdf" download="Resume.pdf" target="_blank">
+                <button class="resumebtn">Download CV</button>
+            </a>
+        </div>
+
+        <div class="right-side">
+            <img src="grad-pic.jpg" alt="gradpic-from-shs" class="grad-pic">
+        </div>
+
+    </section>
+
+    <!--ABOUT SECTION-->
+    <section id="about">
+        <div class="divide">
+            <div class="kaliwa">
+                <img src="abt-profile.jpg" class="sideviewangatake">
+                <a href="about.html" id="morebtn">Click to know more of me</a>
+            </div>
+
+            <div class="kanan">
+                <h1>GET TO KNOW <span class="self">ME</span></h1>
+                <p class="ITJourney"><span>Hello there! I am Elaine Joyce Manalo</span>, a third-year student pursuing Bachelor of Science in Information Technology 
+                        from the school of Dalubhasa, Dalubhasaan ng Lungsod ng Lucena. Honestly speaking, I'm still in the point of figuring out my life would be.<br>
+                        <br>
+                        
+                        My journey in the world of IT is quite overwhelming since I  don't have enough knowledge about IT or skills in coding,
+                         I just took it since I'm just fascinated how technology works.
+                        However, It excites me when we are challenge to do our websites 
+                        since I found immense joy in designing or editing something even in my younger years. 
+                        It is quite challenging but I found joy when I am able to achieve the final output of my project.
+                        That's when I thought to myself that making aesthetic design captures my liking.<br>
+                        <br>
+                        As I delved deeper into the world of web development, it shows me how creative the technology is. 
+                        My journey is one of continuous exploration and endless opportunities for growth. It taught me to transform raw ideas into aesthetically 
+                        pleasing and functional websites. Now, I am excited to see where my journey in web development will take me. Let's connect our minds into making explicit ideas!  
+                        <br>
+                </p>
+
+                <div class="myskills">
+
+                    <h1>My Skills:</h1>
+
+                    <div class="skills-logo">
+                        <img src="html.png" alt="html-logo" class="logos">
+                        <img src="js.png" alt="js-logo" class="logos">
+                        <img src="css.png" alt="css-logo" class="logos">
+                        <img src="figma.png" alt="figma-logo" class="logos">
+
+                    
+                    </div>
+
+                </div>
+        
+
+    </section>
+    
+    <!--MY PROJECT SECTION-->
+    <section id="projects">
+        <div class="project-header">
+            <p>Browse my Recent</p>
+            <h1>PROJECTS</h1>
+        </div>
+
+        <div class="myrecent-projects">
+            <div class="box">
+                <h1>Functional Calculator</h1>
+                <img src="functionalcalcu.png">
+                <div class="display-btn">
+                    <a href="https://ejmanalo.github.io/workingcalculator/">Live Display</a>
+    
+                </div>
+                
+            </div>
+            
+            <div class="box">
+                <h1>To Do List</h1>
+                <img src="todolist.png">
+                <div class="display-btn">
+                    <a href="https://ejmanalo.github.io/to-do-list-app/">Live Display</a>
+    
+                </div>
+            </div>
+
+            <div class="box">
+                <h1>Quiz-Application</h1>
+                <img src="quiz-app.png">
+                <div class="display-btn">
+                    <a href="https://ejmanalo.github.io/Quiz-Application/">Live Display</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="myrecent-projects">
+            <div class="box">
+                <h1>JS AddEventlistener</h1>
+                <img src="addEventlistener.png">
+                <div class="display-btn">
+                    <a href="https://ejmanalo.github.io/HandsOn1-addEventListener-WS101/">Live Display</a>
+                </div>
+                
+            </div>
+            
+            <div class="box">
+                <h1>JS Color Changer</h1>
+                <img src="colorchanger.png">
+                <div class="display-btn">
+                    <a href="https://ejmanalo.github.io/HandsOn2-colorChanger-WS101/">Live Display</a>
+    
+                </div>
+            </div>
+
+            <div class="box">
+                <h1> Landing Page</h1>
+                <img src="functionalcalcu.png">
+                <div class="display-btn">
+                    <a href="https://ejmanalo.github.io/landingpage/">Live Display </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--CONTACT SECTION-->
+    <section id="contact">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="4eaf6e03-933a-4b92-b105-2dfd78a6d3b4">
+            <input type="text" name="name" placeholder="Your Name" class="input-contact" required>
+            <input type="email" name="email" placeholder="Your Email" class="input-contact" required>
+            <textarea name="message" placeholder="Your Message" class="input-contact" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="social-content">
+            <h1>Get in <br> <span class="changetext">touch</span></h1>
+            <div class="socials">
+    
+                    <a href="https://www.facebook.com/elainejoyce.manalo.9"><span class="icon"><i class="fa-brands fa-facebook"></i></span> Elaine Joyce Manalo</a>
+                    <a href="https://www.instagram.com/elaine.joycee"><span class="icon"><i class="fa-brands fa-instagram"></i></span> @elaine.joycee</a>
+                    <a href="https://github.com/ejmanalo"><span class="icon"><i class="fa-brands fa-github"></i></span> ejmanalo</a>
+                    <a href="https://www.facebook.com/elainejoyce.manalo.9"><span class="icon"><i class="fa-regular fa-envelope"></i></span> elainejoycemanalo0@gmail.com</a>
+        
+            </div>
+        </div>   
+
+    </section>
+    
+    <!--FOOTER SECTION-->
+
+    <footer>
+        <p class="copyright">Copyright © 2023 | All Rights Reserved</p>
+        <p class="developer">
+            Developed by Elaine Joyce G. Manalo
+        </p>
+    </footer>
+
+    
+
+
+        
+
+    
+</body>
+</html>
