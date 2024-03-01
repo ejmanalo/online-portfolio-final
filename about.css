@@ -36,7 +36,8 @@ body{
     margin: 0.3rem 2rem;
     width: 140px;
     height: 55px;
-    padding-top: 0.1rem
+    padding-top: 0.1rem;
+    
   }
 
 nav ul li{
@@ -50,7 +51,16 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 19px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    transition: 0.5s ease-out;
 }
+nav ul li a:hover, 
+nav ul li a.active{
+    color: rgb(239, 239, 191);
+    letter-spacing: 1px;
+}
+
 
 /*HERO-TEXT*/
 .hero-text {
@@ -64,8 +74,8 @@ nav ul li a{
   
   }
   .hero-text h1{
-    font-family: "Protest Riot";
-    font-size: 80px;
+    font-family: "Michroma";
+    font-size: 50px;
     letter-spacing: 8px;
   }
   .hero-text h3{
@@ -80,8 +90,21 @@ nav ul li a{
     gap: 20px;
     margin-top: 10px;
   }
+
+  
   .icon{
     color: white;
+    background: dimgray;
+    border: dimgray 1px solid;
+    padding: 5px;
+    border-radius: 50px;
+    transition: 1s;
+  
+  }
+
+  .icon:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: #fff 2px solid
   }
 
 /* ABOUT SECTION */
@@ -294,6 +317,8 @@ nav ul li a{
       columns: 1;
     }
   }
+
+  /* CONTACT SECTION */
   #contact{
     background-color: #607f84;
     height: 100vh;
@@ -313,7 +338,8 @@ nav ul li a{
     border: #607f84 3px solid;
     padding: 50px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
 }
 
 .input-contact{
@@ -323,6 +349,7 @@ nav ul li a{
     outline: none;
     padding-left: 20px;
     border-radius: 50px;
+    font-family: "Montserrat";
 
 }
 
@@ -330,36 +357,35 @@ nav ul li a{
     height: 150px;
     padding-top: 15px;
     border-radius: 20px;
-    font-family: "Montserrat";
 }
 .input-contact:focus{
-    border: #e7dcaa 2px solid;
+    border: #b9b7b7 2px solid;
 }
 .contact-form::placeholder{
     color: #a9a9a9;
     font-size: 50px;
-    font-family: "Montserrat";
-    letter-spacing: 2px;
 }
 .contact-form button{
     display: flex;
-    justify-content: center;
-    padding: 15px 30px;
+    padding: 10px 20px;
     font-size: 16px;
     gap: 10px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     background: #43727a;
-    margin-top: 10px;
+    margin-top: 15px;
+    color: #fff;
+    font-family: "Montserrat";
 }
 .contact-form button:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: #43727a 2px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: #fff 2px solid;
     background: transparent;
+    letter-spacing: 3px;
 }
 .social-content{
     width: 40%;
@@ -372,11 +398,12 @@ nav ul li a{
     text-transform: uppercase;
     font-family: "Gruppo";
     letter-spacing: 5px;
+    color: rgb(239, 239, 191);
+    text-shadow: 0 0 5px rgba(230, 211, 211, 0.2);
 }
 .changetext{
-    letter-spacing: 8px;
-    color: antiquewhite;
-  
+    letter-spacing: 9px;
+    color: rgb(241, 232, 221);
 }
 .socials-contact{
     display: flex;
@@ -387,28 +414,59 @@ nav ul li a{
 .socials-contact a{
     text-decoration: none;
     font-family: "Montserrat";
-    font-size: 15px;
+    font-size: 17px;
     color: #fff;
-    margin-left: 5px;
+    margin-left: 6px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-style: italic;
+    transition: 0.5s ease-out;
 }
+.socials-contact a:hover{
+    color: rgb(239, 239, 191);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
 .icon-contact{
-    color: white;
-    text-align: center;
+    color: none;
     border-radius: 50px;
     padding: 5px;
     background: #454242;
     font-size: 20px;
+    justify-content: center;
+    align-items: center;
 
 }
 
+
+@media (max-width: 800px){
+    .input-contact{
+        width: 80vw;
+    }
+    
+}
+
+
 footer{
   background-color: #43727a;
-  font-family: "Poppins";
-  color: #e7dcaa;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
-  letter-spacing: 3px;
+  }
+
+.copyright{
+  font-size: 15px;
+  font-family: "Poppins";
+  color: rgb(239, 239, 191);
+
+}
+.developer{
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(221, 221, 180);
 }
